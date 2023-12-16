@@ -63,6 +63,7 @@ export const App = () => {
           />
         </Route>
       </Routes>
+
       <GlobalStyle />
     </>
   );

@@ -9,7 +9,6 @@ import {
   Label,
 } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-// import { addPhone } from '../../redux/contactSlice';
 
 import { addContact } from '../../redux/operations';
 import { selectContacts } from '../../redux/selectors';
