@@ -21,8 +21,8 @@ const formSchema = Yup.object().shape({
     .required('Required'),
   number: Yup.string()
     .matches(
-      /^(\d{2,}-\d{2,}-\d{2,}|\d{2,}-\d{2,}|\d{5,})$/,
-      'It must be min 5 numbers (1234567 or 123-45-67)'
+      /^(0\d{2}-?\d{3}-?\d{2}-?\d{2}|0\d{9})$/,
+      'It must be min 7 numbers (000-123-45-67 or 0001234567)'
     )
     .required('Required'),
 });
@@ -60,13 +60,13 @@ export const ContactForm = () => {
         <StyledForm>
           <Label>
             Name
-            <StyleField type="text" name="name" />
+            <StyleField type="text" name="name" placeholder="Stepan Bandera" />
             <StyledError name="name" component="p" />
           </Label>
 
           <Label>
             Number
-            <StyleField type="tel" name="number" />
+            <StyleField type="tel" name="number" placeholder="000-111-11-11" />
             <StyledError name="number" component="p" />
           </Label>
 
