@@ -2,7 +2,7 @@ import { Field, Form, ErrorMessage } from 'formik';
 import styled from 'styled-components';
 
 export const StyledForm = styled(Form)`
-  margin-top: 18px;
+  /* margin-top: 18px; */
   margin-bottom: 36px;
 `;
 export const StyleField = styled(Field)`
@@ -34,7 +34,7 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledWrapper = styled.div`
-  /* padding: 36px; */
+  /* padding-left: 28px; */
 `;
 
 export const StyledError = styled(ErrorMessage)`

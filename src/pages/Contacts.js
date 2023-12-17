@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from '../redux/operations';
 import { selectIsLoading } from '../redux/selectors';
+import { Filter } from '../components/Filter/Filter';
+import { ContactsWrapper } from './Contacts.styled';
 
 export default function Tasks() {
   const dispatch = useDispatch();
@@ -14,11 +16,12 @@ export default function Tasks() {
   }, [dispatch]);
 
   return (
-    <>
-      <title>Your contacts</title>
+    <ContactsWrapper>
       <ContactForm />
-      <div>{isLoading && 'Loading...'}</div>
+      <Filter />
+      <h4>Your contacts:</h4>
+      {isLoading && 'Loading...'}
       <ContactList />
-    </>
+    </ContactsWrapper>
   );
 }

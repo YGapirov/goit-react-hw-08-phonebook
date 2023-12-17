@@ -13,11 +13,11 @@ import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import { refreshUser } from '../../redux/auth/operations';
-import { Layout } from '../Layout';
+import { Layout } from '../Layout/Layout';
 import { RestrictedRoute } from '../RestrictedRoute';
 import { PrivateRoute } from '../PrivateRoute';
 
-const HomePage = lazy(() => import('../../pages/Home'));
+const HomePage = lazy(() => import('../../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../../pages/Register'));
 const LoginPage = lazy(() => import('../../pages/Login'));
 const ContactsPage = lazy(() => import('../../pages/Contacts'));

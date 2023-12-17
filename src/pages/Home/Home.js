@@ -1,12 +1,14 @@
+import { HomeTitle } from './Home.styled';
+
 export default function Home() {
   return (
     <div>
-      <h1>
+      <HomeTitle>
         Welcome to Phonebook!{' '}
         <span role="img" aria-label="Greeting icon">
           💁‍♀️
         </span>
-      </h1>
+      </HomeTitle>
     </div>
   );
 }
