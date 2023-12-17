@@ -6,8 +6,9 @@ import { fetchContacts } from '../redux/operations';
 import { selectIsLoading } from '../redux/selectors';
 import { Filter } from '../components/Filter/Filter';
 import { ContactsWrapper } from './Contacts.styled';
+import { Loader } from '../components/Loader/Loader';
 
-export default function Tasks() {
+export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
 
@@ -20,7 +21,7 @@ export default function Tasks() {
       <ContactForm />
       <Filter />
       <h4>Your contacts:</h4>
-      {isLoading && 'Loading...'}
+      {isLoading && <Loader isLoading={isLoading} />}
       <ContactList />
     </ContactsWrapper>
   );

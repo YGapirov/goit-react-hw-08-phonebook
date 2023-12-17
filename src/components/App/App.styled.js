@@ -15,3 +15,9 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
   padding-bottom: 15px;
 `;
+
+export const LoadingMessage = styled.p`
+  color: #888;
+  font-size: 32px;
+  text-align: center;
+`;
