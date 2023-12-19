@@ -9,3 +9,7 @@ export const ContactsWrapper = styled.div`
   padding: 28px;
   background-color: whitesmoke;
 `;
+
+export const ContactsTitle = styled.h4`
+  padding-bottom: 8px;
+`;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Label = styled.label`
   color: darkgray;
+  padding-top: 12px;
 `;
 export const Input = styled.input`
   display: block;
